@@ -36,9 +36,30 @@ L: Organizar documentos (5 min)
 
 M: Viajar al aeropuerto y facturar (25 min)
 
-Dependencias entre tareas:
+## Dependencias entre tareas:
 
 Algunas tareas deben ser realizadas antes que otras, por ejemplo, no se puede viajar al aeropuerto antes de haber recogido las maletas. Además, la reserva del vuelo debe completarse antes de recoger el billete, y la preparación del billete debe ocurrir antes de llevar el billete a la oficina.
+
+## Objetivos del Reto:
+Definir el Objetivo del Proyecto: Identificar el propósito principal del proyecto (optimizar la gestión del tiempo para cumplir con el plazo de 100 minutos) y no solo las tareas.
+
+Diagrama de Flujo del Cronograma: Crear un diagrama de flujo para visualizar el cronograma del proyecto, teniendo en cuenta solo las dependencias entre tareas y no restricciones de recursos.
+
+Desarrollo de Algoritmo en C++:
+
+Crear un programa en C++ que:
+
+Permita calcular el orden de ejecución de las tareas en función de sus dependencias.
+Determine el tiempo total necesario para completar todas las tareas.
+Evalúe si es posible completar las tareas en 100 minutos o menos.
+Imprima el orden óptimo de ejecución de las tareas y su tiempo total.
+Restricciones:
+El tiempo máximo permitido para completar las tareas es de 100 minutos.
+El algoritmo debe gestionar de forma eficiente las dependencias entre las tareas, de tal manera que optimice el tiempo de ejecución.
+Entrega:
+Código fuente en C++ que implemente la solución al problema.
+Diagrama de flujo que represente el cronograma de ejecución de las tareas.
+¡Buena suerte y que la optimización esté de su lado!
 
 # 1. Definición del Objetivo
 El objetivo es optimizar el tiempo de las tareas para que el ejecutivo complete su agenda en un plazo máximo de 100 minutos.
