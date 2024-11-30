@@ -31,7 +31,9 @@ Viajar al aeropuerto y facturar (M) requiere que H (maletas en la oficina) y F (
 
 # 4. Resultados Esperados
 Orden de ejecución óptimo: Calculado en función de las dependencias.
+
 Tiempo total: Sumando las duraciones en el orden determinado.
+
 Evaluación del tiempo límite: El programa verifica si el tiempo total es menor o igual a 100 minutos.
 # 5. Conclusión
 Este enfoque optimiza la gestión del tiempo y garantiza que se respeten las dependencias. Si el tiempo total excede los 100 minutos, será necesario modificar las duraciones de las tareas o reestructurar el flujo de trabajo.
