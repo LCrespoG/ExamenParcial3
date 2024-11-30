@@ -32,6 +32,7 @@ Viajar al aeropuerto y facturar (M) requiere que H (maletas en la oficina) y F (
 
 (H), (F) → (M)
 
+![image](https://github.com/user-attachments/assets/1bfaa356-522d-440f-85c8-05b299efae2d)
 
 # 3. Resultados Esperados
 Orden de ejecución óptimo: Calculado en función de las dependencias.
