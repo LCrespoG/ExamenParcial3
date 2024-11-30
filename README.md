@@ -2,7 +2,7 @@
 El objetivo es optimizar el tiempo de las tareas para que el ejecutivo complete su agenda en un plazo máximo de 100 minutos.
 
 # 2. Diagrama de Dependencias
-Las dependencias se interpretan como un grafo dirigido, donde las tareas son nodos y las dependencias son aristas. Aquí está la lista de dependencias y el flujo lógico de las tareas:
+Las dependencias se interpretan como un grafo dirigido, donde las tareas son nodos y las dependencias son aristas:
 
 Reserva de vuelo (A) → Preparación del billete (D) → Recoger billete (E) → Llevar billete a la oficina (F)
 
