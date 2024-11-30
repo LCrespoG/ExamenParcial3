@@ -5,9 +5,13 @@ El objetivo es optimizar el tiempo de las tareas para que el ejecutivo complete 
 Las dependencias se interpretan como un grafo dirigido, donde las tareas son nodos y las dependencias son aristas. Aquí está la lista de dependencias y el flujo lógico de las tareas:
 
 Reserva de vuelo (A) → Preparación del billete (D) → Recoger billete (E) → Llevar billete a la oficina (F)
+
 Informar a casa para empacar (B) → Empacar maletas (C) → Recoger maletas de casa (G) → Llevar maletas a la oficina (H)
+
 Conversación sobre documentos requeridos (I) → Reunir documentos (K) → Organizar documentos (L)
+
 Dictar instrucciones para ausencia (J) (independiente de otras tareas)
+
 Viajar al aeropuerto y facturar (M) requiere que H (maletas en la oficina) y F (billetes en la oficina) estén completadas.
 Diagrama de flujo simplificado:
 scss
