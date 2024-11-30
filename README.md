@@ -15,7 +15,7 @@ Dictar instrucciones para ausencia (J) (independiente de otras tareas)
 Viajar al aeropuerto y facturar (M) requiere que H (maletas en la oficina) y F (billetes en la oficina) estén completadas.
 
 Diagrama de flujo simplificado:
-scss
+
 Copiar código
 
 (A) → (D) → (E) → (F)
