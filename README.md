@@ -1,7 +1,7 @@
 # Link repositorio
 https://github.com/LCrespoG/ExamenParcial3.git
 
-(Corregir preferiblemente el 2)
+(Corregir preferiblemente Solucion 2)
 
 # 1. Definición del Objetivo
 El objetivo es optimizar el tiempo de las tareas para que el ejecutivo complete su agenda en un plazo máximo de 100 minutos.
