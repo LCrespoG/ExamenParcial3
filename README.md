@@ -69,7 +69,7 @@ Algunas tareas deben ser realizadas antes que otras, por ejemplo, no se puede vi
 
 - Diagrama de flujo que represente el cronograma de ejecución de las tareas.
 
-**¡Buena suerte y que la optimización esté de su lado!**
+***¡Buena suerte y que la optimización esté de su lado!***
 
 # 1. Definición del Objetivo
 El objetivo es optimizar el tiempo de las tareas para que el ejecutivo complete su agenda en un plazo máximo de 100 minutos.
