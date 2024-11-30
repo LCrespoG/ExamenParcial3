@@ -10,16 +10,16 @@ int main() {
         {'A', 20, {}},
         {'B', 5, {}},
         {'C', 40, {'B'}},
-        {'D', 10, {}},
-        {'E', 5, {'A'}},
-        {'F', 10, {'D', 'E'}},
+        {'D', 10, {'A'}},
+        {'E', 5, {'D'}},
+        {'F', 10, {'E'}},
         {'G', 20, {'C'}},
         {'H', 25, {'G'}},
         {'I', 35, {}},
-        {'J', 25, {'I'}},
-        {'K', 15, {'J'}},
+        {'J', 25, {}},
+        {'K', 15, {'I'}},
         {'L', 5, {'K'}},
-        {'M', 25, {'H'}}
+        {'M', 25, {'H','L','F','J'}}
     };
 
     int numPersonas = 1;
@@ -27,7 +27,7 @@ int main() {
         numPersonas++;
     }
 
-    std::cout << "\nNumero minimo de personas necesarias: " << numPersonas << "\n" << std::endl;
+    std::cout << "\nNumero minimo de personas necesarias: " << numPersonas << " personas\n" << std::endl;
 
     std::unordered_map<char, int> asignacionTarea;
     std::unordered_map<char, int> inicioTarea;

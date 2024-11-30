@@ -84,23 +84,28 @@ void calcularAsignaciones(const std::vector<Tarea>& tareas, int numPersonas, std
 }
 
 void imprimirResultados(const std::vector<Tarea>& tareas, int numPersonas, const std::unordered_map<char, int>& asignacionTarea, const std::unordered_map<char, int>& inicioTarea, int horaInicio, int minutoInicio) {
+
+    bool menosDe100 = true;
     for (int i = 0; i < numPersonas; ++i) {
         std::cout << "Persona " << i + 1 << ":" << std::endl;
         std::cout << std::left << std::setw(10) << "Hora" << std::setw(10) << "Tarea" << std::setw(10) << "Duracion" << std::endl;
         std::cout << "----------------------------------------" << std::endl;
+        int tiempototal = 0;
         for (const auto& tarea : tareas) {
             if (asignacionTarea.at(tarea.id) == i) {
                 int horaTarea = horaInicio + (inicioTarea.at(tarea.id) + minutoInicio) / 60;
                 int minutoTarea = (inicioTarea.at(tarea.id) + minutoInicio) % 60;
+                tiempototal += tarea.duracion;
                 std::cout << std::setw(2) << std::setfill('0') << horaTarea << ":"
                      << std::setw(2) << std::setfill('0') << minutoTarea << std::setfill(' ') << "       "
                      << tarea.id << "       "
-                     << tarea.duracion << " min" << std::endl;
+                     << tarea.duracion << " mins" << std::endl;
             }
         }
-        std::cout << std::endl;
+        if(tiempototal > 100) menosDe100 = false;
+        std::cout <<"Total tiempo:       "<< tiempototal << " mins \n"<< std::endl;
     }
-
+    int tiempototal2 = 0;
     std::cout << "Tabla de tareas por hora:" << std::endl;
     std::cout << std::left << std::setw(10) << "Hora" << std::setw(10) << "Tarea" << std::setw(10) << "Persona" << std::setw(10) << "Duracion" << std::endl;
     std::cout << "--------------------------------------------------------" << std::endl;
@@ -109,12 +114,22 @@ void imprimirResultados(const std::vector<Tarea>& tareas, int numPersonas, const
             if (inicioTarea.at(tarea.id) == t) {
                 int horaTarea = horaInicio + (t + minutoInicio) / 60;
                 int minutoTarea = (t + minutoInicio) % 60;
+                tiempototal2 += tarea.duracion;
                 std::cout << std::setw(2) << std::setfill('0') << horaTarea << ":"
                      << std::setw(2) << std::setfill('0') << minutoTarea << std::setfill(' ') << "       "
                      << tarea.id << "          "
                      << asignacionTarea.at(tarea.id) + 1 << "      "
-                     << tarea.duracion << " min" << std::endl;
+                     << tarea.duracion << " mins" << std::endl;
             }
         }
+    }
+    std::cout <<"Total tiempo:                 "<< tiempototal2 << " mins \n"<< std::endl;
+
+    if (menosDe100)
+    {
+        std::cout<<"Se ha completado con exito la tarea en menos de 100 minutos";
+    } else
+    {
+        std::cout<<"No se pudo completar la tarea en menos de 100 minutos";
     }
 }
