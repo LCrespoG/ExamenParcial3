@@ -17,11 +17,17 @@ Viajar al aeropuerto y facturar (M) requiere que H (maletas en la oficina) y F (
 Diagrama de flujo simplificado:
 scss
 Copiar código
+
 (A) → (D) → (E) → (F)
+
 (B) → (C) → (G) → (H)
+
 (I) → (K) → (L)
+
 (J)
+
 (H), (F) → (M)
+
 # 3. Desarrollo del Algoritmo en C++
 
 # 4. Resultados Esperados
