@@ -49,7 +49,7 @@ Algunas tareas deben ser realizadas antes que otras, por ejemplo, no se puede vi
 
 - Crear un programa en C++ que:
 
-Permita calcular el orden de ejecución de las tareas en función de sus dependencias.
+-- Permita calcular el orden de ejecución de las tareas en función de sus dependencias.
 
 Determine el tiempo total necesario para completar todas las tareas.
 
