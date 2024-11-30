@@ -50,15 +50,25 @@ Desarrollo de Algoritmo en C++:
 Crear un programa en C++ que:
 
 Permita calcular el orden de ejecución de las tareas en función de sus dependencias.
+
 Determine el tiempo total necesario para completar todas las tareas.
+
 Evalúe si es posible completar las tareas en 100 minutos o menos.
+
 Imprima el orden óptimo de ejecución de las tareas y su tiempo total.
-Restricciones:
+
+## Restricciones:
+
 El tiempo máximo permitido para completar las tareas es de 100 minutos.
+
 El algoritmo debe gestionar de forma eficiente las dependencias entre las tareas, de tal manera que optimice el tiempo de ejecución.
-Entrega:
+
+## Entrega:
+
 Código fuente en C++ que implemente la solución al problema.
+
 Diagrama de flujo que represente el cronograma de ejecución de las tareas.
+
 ¡Buena suerte y que la optimización esté de su lado!
 
 # 1. Definición del Objetivo
