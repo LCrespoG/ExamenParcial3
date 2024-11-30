@@ -58,7 +58,7 @@ void calcularAsignaciones(const std::vector<Tarea>& tareas, int numPersonas, std
 
     inicializarMapas(tareas, gradoEntrada, listaAdyacencia, duracionTarea);
 
-   std:: queue<char> cola;
+    std:: queue<char> cola;
     for (const auto& tarea : tareas) {
         if (gradoEntrada[tarea.id] == 0) {
             cola.push(tarea.id);
@@ -89,7 +89,7 @@ void imprimirResultados(const std::vector<Tarea>& tareas, int numPersonas, const
     for (int i = 0; i < numPersonas; ++i) {
         std::cout << "Persona " << i + 1 << ":" << std::endl;
         std::cout << std::left << std::setw(10) << "Hora" << std::setw(10) << "Tarea" << std::setw(10) << "Duracion" << std::endl;
-        std::cout << "----------------------------------------" << std::endl;
+        std::cout << "-----------------------------" << std::endl;
         int tiempototal = 0;
         for (const auto& tarea : tareas) {
             if (asignacionTarea.at(tarea.id) == i) {
@@ -108,7 +108,7 @@ void imprimirResultados(const std::vector<Tarea>& tareas, int numPersonas, const
     int tiempototal2 = 0;
     std::cout << "Tabla de tareas por hora:" << std::endl;
     std::cout << std::left << std::setw(10) << "Hora" << std::setw(10) << "Tarea" << std::setw(10) << "Persona" << std::setw(10) << "Duracion" << std::endl;
-    std::cout << "--------------------------------------------------------" << std::endl;
+    std::cout << "---------------------------------------" << std::endl;
     for (int t = 0; t <= 100; ++t) {
         for (const auto& tarea : tareas) {
             if (inicioTarea.at(tarea.id) == t) {
@@ -127,9 +127,9 @@ void imprimirResultados(const std::vector<Tarea>& tareas, int numPersonas, const
 
     if (menosDe100)
     {
-        std::cout<<"Se ha completado con exito la tarea en menos de 100 minutos";
+        std::cout<<"Se ha completado con exito la tarea en menos de 100 minutos\n";
     } else
     {
-        std::cout<<"No se pudo completar la tarea en menos de 100 minutos";
+        std::cout<<"No se pudo completar la tarea en menos de 100 minutos\n";
     }
 }
